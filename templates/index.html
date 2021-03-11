@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+ <h3>Merhaba</h3>
+ <p>Bu site python Flask öğrenmek amacıyla yapılmıştır.</p>
+</div>
+
+
+
+<ul>
+    {% for article in article %}
+        <li>Article Id: {{article.id}} , Title: {{article.title}}</li>
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}
